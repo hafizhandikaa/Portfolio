@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     /* ==========================================================================
-       1. SCROLL REVEAL ANIMATIONS
+       1. APPLE-STYLE SCROLL REVEAL (FADE SCALE)
        ========================================================================== */
     const revealOnScroll = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, {
         root: null,
-        threshold: 0.1, // Trigger when 10% of the element is visible
+        threshold: 0.05, // Trigger when 5% of the element is visible
         rootMargin: "0px 0px -40px 0px"
     });
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     reveals.forEach(reveal => {
         revealOnScroll.observe(reveal);
         
-        // Initial check for elements already in viewport
+        // Initial viewport check
         const rect = reveal.getBoundingClientRect();
         if (rect.top < window.innerHeight - 40) {
             reveal.classList.add('active');
@@ -27,23 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================================================
-       2. SCROLL ACTION: NAVBAR & ACTIVE NAV LINKS
+       2. SCROLL EVENTS: NAVBAR SCROLL & ACTIVE STATE
        ========================================================================== */
     const navbar = document.querySelector('.navbar');
     const sections = document.querySelectorAll('section[id], header[id]');
     const navItems = document.querySelectorAll('.nav-link-item');
 
     window.addEventListener('scroll', () => {
-        // Toggle navbar background
-        if (window.scrollY > 50) {
+        // Toggle navbar scrolled class
+        if (window.scrollY > 40) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
 
-        // Active link tracking
+        // Section tracking on scroll
         let currentSection = "";
-        const scrollPosition = window.scrollY + 120; // Offset for nav height
+        const scrollPosition = window.scrollY + 100; // Nav height offset
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -53,8 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Fallback for top of page
-        if (window.scrollY < 100) {
+        if (window.scrollY < 80) {
             currentSection = "home";
         }
 
@@ -77,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleMenu() {
         hamburgerBtn.classList.toggle('open');
         mobileOverlay.classList.toggle('open');
-        // Prevent body scrolling when menu is open
         document.body.style.overflow = mobileOverlay.classList.contains('open') ? 'hidden' : 'auto';
     }
 
@@ -85,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
-            // Close menu when a link is clicked
             hamburgerBtn.classList.remove('open');
             mobileOverlay.classList.remove('open');
             document.body.style.overflow = 'auto';
@@ -99,39 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
-
-    /* ==========================================================================
-       5. PREMIUM HOVER CARD TILT & GLOW MICRO-INTERACTIONS
-       ========================================================================== */
-    const interactiveCards = document.querySelectorAll('.glass-card, .btn-resume, .btn-contact-cta');
-
-    interactiveCards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left; // x position inside element
-            const y = e.clientY - rect.top;  // y position inside element
-            
-            // Calculate tilt angle based on cursor position (max 4deg tilt)
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = ((centerY - y) / centerY) * 4;
-            const rotateY = ((x - centerX) / centerX) * 4;
-
-            // Apply subtle tilt transform
-            if (!card.classList.contains('btn-resume') && !card.classList.contains('btn-contact-cta')) {
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
-            }
-
-            // Create a dynamic glow spotlight effect on cards
-            card.style.setProperty('--mouse-x', `${x}px`);
-            card.style.setProperty('--mouse-y', `${y}px`);
-        });
-
-        card.addEventListener('mouseleave', () => {
-            // Reset transforms on mouse leave
-            card.style.transform = '';
-            card.style.setProperty('--mouse-x', `-999px`);
-            card.style.setProperty('--mouse-y', `-999px`);
-        });
-    });
 });

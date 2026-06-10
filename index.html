@@ -6,10 +6,10 @@
     <title>Hafizh Andika's Portfolio</title>
     <meta name="description" content="Portfolio by Hafizh Andika Putera Al-Faris">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Inter for Body, Lexend for Headers (matches SF Pro display weights) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,13 +18,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Glow Effects -->
-    <div class="glow-container">
-        <div class="glow-blur glow-1"></div>
-        <div class="glow-blur glow-2"></div>
-    </div>
-
-    <!-- Floating Navigation Bar -->
+    <!-- Apple-Style Slim Header -->
     <nav class="navbar" id="home">
         <div class="nav-container">
             <a href="#home" class="logo">Hafizh Andika</a>
@@ -33,12 +27,11 @@
                 <li><a href="#about" class="nav-link-item">About</a></li>
                 <li><a href="#projects" class="nav-link-item">UI/UX Projects</a></li>
                 <li><a href="#other-projects" class="nav-link-item">Other Projects</a></li>
-                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNqKqtDDxSjVKsDWTTpDJXVdmKSvGWWcBkldwxxgFlbkzNQgPqWVmDPZdsrfZfcdRdfwzg" target="_blank" class="btn-contact-nav">Contact Me</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNqKqtDDxSjVKsDWTTpDJXVdmKSvGWWcBkldwxxgFlbkzNQgPqWVmDPZdsrfZfcdRdfwzg" target="_blank" class="nav-link-item link-contact">Contact Me</a></li>
             </ul>
 
-            <!-- Mobile Hamburger Menu Button -->
+            <!-- Mobile Hamburger Menu -->
             <button class="hamburger-btn" aria-label="Toggle Menu">
-                <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
@@ -51,41 +44,47 @@
             <li><a href="#about" class="mobile-link">About</a></li>
             <li><a href="#projects" class="mobile-link">UI/UX Projects</a></li>
             <li><a href="#other-projects" class="mobile-link">Other Projects</a></li>
-            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNqKqtDDxSjVKsDWTTpDJXVdmKSvGWWcBkldwxxgFlbkzNQgPqWVmDPZdsrfZfcdRdfwzg" target="_blank" class="mobile-link mobile-contact-btn">Contact Me</a></li>
+            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNqKqtDDxSjVKsDWTTpDJXVdmKSvGWWcBkldwxxgFlbkzNQgPqWVmDPZdsrfZfcdRdfwzg" target="_blank" class="mobile-link">Contact Me</a></li>
         </ul>
     </div>
 
     <!-- Main Content Wrapper -->
     <main>
-        <!-- Hero Section -->
+        <!-- Apple Centered Hero Section -->
         <section class="hero-section">
             <div class="container hero-container">
                 <div class="hero-content reveal">
-                    <h1 class="hero-title">Hafizh Andika Putera Al-Faris</h1>
-                    <p class="hero-subtitle">A junior designer who is eager to grow, constantly learning new skills, and turning ideas into digital experiences.</p>
-                    <a href="https://drive.google.com/file/d/1FcxRejp-oxnNnnqQ26N0jj9fdHKnstHk/view?usp=sharing" target="_blank" class="btn-resume">
-                        Resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
+                    <h1 class="hero-title">Hafizh Andika</h1>
+                    <p class="hero-subtitle">Information Systems graduate & Product Designer. Crafting digital experiences that actually make sense for people.</p>
+                    <div class="hero-actions">
+                        <a href="https://drive.google.com/file/d/1FcxRejp-oxnNnnqQ26N0jj9fdHKnstHk/view?usp=sharing" target="_blank" class="apple-link">
+                            View Resume <i class="fa-solid fa-chevron-right icon-chevron"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNqKqtDDxSjVKsDWTTpDJXVdmKSvGWWcBkldwxxgFlbkzNQgPqWVmDPZdsrfZfcdRdfwzg" target="_blank" class="apple-link">
+                            Let's Talk <i class="fa-solid fa-chevron-right icon-chevron"></i>
+                        </a>
+                    </div>
                 </div>
                 
+                <!-- Large Centered Visual Showcase -->
                 <div class="hero-visual reveal delay-1">
-                    <div class="profile-frame">
+                    <div class="device-bezel-frame">
                         <img src="profile.jpg" alt="Hafizh Andika Putera Al-Faris" class="profile-img">
-                        <!-- Framer Accent/Green Line decoration -->
-                        <img src="accent_line.png" alt="Decoration accent" class="accent-line-img">
+                        <img src="accent_line.png" alt="Decorative highlight" class="accent-line-img">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About Section (Apple Bento Style Grid) -->
         <section id="about" class="about-section">
             <div class="container">
                 <h2 class="section-title reveal">About Me</h2>
                 
                 <div class="about-grid">
-                    <!-- About Text Description -->
-                    <div class="about-info-panel glass-card reveal">
+                    <!-- About Text Block -->
+                    <div class="about-info-panel reveal">
+                        <span class="eyebrow">Who I Am</span>
                         <h3 class="about-name">Hafizh Andika Putera Al-Faris</h3>
                         <p class="about-desc">
                             I'm an <strong>Information Systems</strong> graduate from <strong>BINUS University</strong> who's passionate about designing digital experiences that actually make sense for people.
@@ -98,13 +97,13 @@
                         </p>
                     </div>
 
-                    <!-- Right Side: Details Timelines / Socials / Tools -->
+                    <!-- Right Side Stacked Panels -->
                     <div class="about-details-column">
                         
-                        <!-- Timeline Section (Experience & Education) -->
+                        <!-- Timeline Section (Experience & Education side by side) -->
                         <div class="details-split-grid">
                             <!-- Work Experience -->
-                            <div class="details-card glass-card reveal delay-1">
+                            <div class="details-card reveal delay-1">
                                 <h4 class="card-heading"><i class="fa-solid fa-briefcase"></i> Work Experience</h4>
                                 <div class="timeline">
                                     <div class="timeline-item">
@@ -123,7 +122,7 @@
                             </div>
 
                             <!-- Educations -->
-                            <div class="details-card glass-card reveal delay-2">
+                            <div class="details-card reveal delay-2">
                                 <h4 class="card-heading"><i class="fa-solid fa-graduation-cap"></i> Educations</h4>
                                 <div class="timeline">
                                     <div class="timeline-item">
@@ -161,26 +160,26 @@
                         </div>
 
                         <!-- Socials -->
-                        <div class="details-card glass-card reveal delay-2">
+                        <div class="details-card reveal delay-2">
                             <h4 class="card-heading"><i class="fa-solid fa-share-nodes"></i> Socials</h4>
                             <div class="socials-list">
-                                <a href="https://www.linkedin.com/in/hafizh-andika-putera-al-faris-487041159/" target="_blank" class="social-item linkedin-hover">
-                                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn <i class="fa-solid fa-arrow-right-long hover-arrow"></i>
+                                <a href="https://www.linkedin.com/in/hafizh-andika-putera-al-faris-487041159/" target="_blank" class="social-item">
+                                    <span>LinkedIn</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
-                                <a href="https://www.instagram.com/hafizhandikaa/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-item instagram-hover">
-                                    <i class="fa-brands fa-instagram"></i> Instagram <i class="fa-solid fa-arrow-right-long hover-arrow"></i>
+                                <a href="https://www.instagram.com/hafizhandikaa/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-item">
+                                    <span>Instagram</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
-                                <a href="https://www.behance.net/hafizhandika" target="_blank" class="social-item behance-hover">
-                                    <i class="fa-brands fa-behance"></i> Behance <i class="fa-solid fa-arrow-right-long hover-arrow"></i>
+                                <a href="https://www.behance.net/hafizhandika" target="_blank" class="social-item">
+                                    <span>Behance</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
-                                <a href="https://dribbble.com/hafizhandikaa" target="_blank" class="social-item dribbble-hover">
-                                    <i class="fa-brands fa-dribbble"></i> Dribbble <i class="fa-solid fa-arrow-right-long hover-arrow"></i>
+                                <a href="https://dribbble.com/hafizhandikaa" target="_blank" class="social-item">
+                                    <span>Dribbble</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Tools Used -->
-                        <div class="details-card glass-card reveal delay-3">
+                        <div class="details-card reveal delay-3">
                             <h4 class="card-heading"><i class="fa-solid fa-laptop-code"></i> Tools That I Used</h4>
                             <div class="tools-grid">
                                 <div class="tool-badge"><i class="fa-brands fa-figma"></i> Figma</div>
@@ -199,22 +198,23 @@
             </div>
         </section>
 
-        <!-- UI/UX Journey Section -->
+        <!-- UI/UX Showcase Section (Apple Banner Product Grid) -->
         <section id="projects" class="journey-section">
             <div class="container">
                 <div class="section-header reveal">
+                    <span class="eyebrow">Case Studies</span>
                     <h2 class="section-title">My UI/UX Journey</h2>
-                    <p class="section-subtitle">My UI/UX journey is about learning, exploring, and creating user-centered designs through studies, internship, and real projects.</p>
+                    <p class="section-subtitle">A chronicle of learning, exploring, and designing user-centered products.</p>
                 </div>
 
                 <div class="projects-vertical-list">
                     <!-- Spotify Redesign -->
-                    <div class="project-case-card glass-card reveal">
+                    <div class="project-case-card reveal">
                         <div class="project-info">
-                            <span class="project-tag">UI/UX Case Study</span>
-                            <h3 class="project-name">Spotify Redesign</h3>
-                            <p class="project-desc">Enhancing user experience through a modernized interface.</p>
-                            <a href="#" class="project-action-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                            <span class="project-tag">Spotify Redesign</span>
+                            <h3 class="project-name">Music, modernized.</h3>
+                            <p class="project-desc">Enhancing user experience through a clean, intuitive, and modernized interface.</p>
+                            <a href="#" class="apple-link">View Case Study <i class="fa-solid fa-chevron-right icon-chevron"></i></a>
                         </div>
                         <div class="project-visual">
                             <img src="sptfy mockup.png" alt="Spotify Redesign Case Study Mockup" class="project-img">
@@ -222,12 +222,12 @@
                     </div>
 
                     <!-- Satu Data -->
-                    <div class="project-case-card glass-card reveal delay-1">
+                    <div class="project-case-card reveal delay-1">
                         <div class="project-info">
-                            <span class="project-tag">centralized platform</span>
-                            <h3 class="project-name">Satu Data</h3>
-                            <p class="project-desc">A centralized platform for data management.</p>
-                            <a href="#" class="project-action-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                            <span class="project-tag">Satu Data</span>
+                            <h3 class="project-name">centralized data. Simplified.</h3>
+                            <p class="project-desc">A unified digital platform facilitating seamless data management and governance.</p>
+                            <a href="#" class="apple-link">View Case Study <i class="fa-solid fa-chevron-right icon-chevron"></i></a>
                         </div>
                         <div class="project-visual">
                             <img src="satu data mockup.png" alt="Satu Data platform Case Study Mockup" class="project-img">
@@ -235,12 +235,12 @@
                     </div>
 
                     <!-- Learnify -->
-                    <div class="project-case-card glass-card reveal delay-2">
+                    <div class="project-case-card reveal delay-2">
                         <div class="project-info">
-                            <span class="project-tag">edtech platform</span>
-                            <h3 class="project-name">Learnify</h3>
-                            <p class="project-desc">Ed-tech platform facilitating seamless online learning.</p>
-                            <a href="#" class="project-action-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                            <span class="project-tag">Learnify</span>
+                            <h3 class="project-name">Ed-tech platform. Reimagined.</h3>
+                            <p class="project-desc">Facilitating smooth, user-focused digital learning environments for students.</p>
+                            <a href="#" class="apple-link">View Case Study <i class="fa-solid fa-chevron-right icon-chevron"></i></a>
                         </div>
                         <div class="project-visual">
                             <img src="learni mock.png" alt="Learnify learning platform Mockup" class="project-img">
@@ -250,22 +250,23 @@
             </div>
         </section>
 
-        <!-- Other Projects Section -->
+        <!-- Other Projects Section (Apple Feature Bento Grid) -->
         <section id="other-projects" class="other-projects-section">
             <div class="container">
                 <div class="section-header reveal">
+                    <span class="eyebrow">College Years</span>
                     <h2 class="section-title">Other Projects</h2>
-                    <p class="section-subtitle">I have done other projects throughout my college years</p>
+                    <p class="section-subtitle">Exploring software engineering, analytics, and database systems.</p>
                 </div>
 
-                <!-- Bento Grid Layout -->
+                <!-- Bento Grid -->
                 <div class="bento-grid">
                     <!-- Java Card -->
-                    <div class="bento-card card-large glass-card reveal">
+                    <div class="bento-card card-large reveal">
                         <div class="bento-info">
                             <span class="bento-tag">GUI Application</span>
-                            <h3 class="bento-title">Java</h3>
-                            <p class="bento-desc">In this project we create an application via Java using a GUI, for the data taken is in accordance with a database that uses MySQL which will then be linked to coding.</p>
+                            <h3 class="bento-title">Java MySQL Integration</h3>
+                            <p class="bento-desc">Developed a desktop tool with a clean GUI mapped to a MySQL relational database system.</p>
                         </div>
                         <div class="bento-visual">
                             <img src="java_project.png" alt="Java MySQL GUI application card details" class="bento-img">
@@ -273,10 +274,10 @@
                     </div>
 
                     <!-- SQL Card -->
-                    <div class="bento-card card-small glass-card reveal delay-1">
+                    <div class="bento-card card-small reveal delay-1">
                         <div class="bento-info">
                             <span class="bento-tag">Database Management</span>
-                            <h3 class="bento-title">SQL</h3>
+                            <h3 class="bento-title">SQL Systems</h3>
                         </div>
                         <div class="bento-visual">
                             <img src="sql_project.png" alt="SQL Database relations breakdown donut chart" class="bento-img">
@@ -284,10 +285,10 @@
                     </div>
 
                     <!-- Tableau Card -->
-                    <div class="bento-card card-medium glass-card reveal delay-2">
+                    <div class="bento-card card-medium reveal delay-2">
                         <div class="bento-info">
                             <span class="bento-tag">Data Visualization</span>
-                            <h3 class="bento-title">Tableau Analytical Dashboard</h3>
+                            <h3 class="bento-title">Tableau Analytics</h3>
                         </div>
                         <div class="bento-visual">
                             <img src="tableau_project.png" alt="Tableau Dashboard overview" class="bento-img">
@@ -295,10 +296,10 @@
                     </div>
 
                     <!-- Database Management Card -->
-                    <div class="bento-card card-medium glass-card reveal delay-3">
+                    <div class="bento-card card-medium reveal delay-3">
                         <div class="bento-info">
                             <span class="bento-tag">System Design</span>
-                            <h3 class="bento-title">Database Management</h3>
+                            <h3 class="bento-title">Database Architectures</h3>
                         </div>
                         <div class="bento-visual">
                             <img src="db_project.jpg" alt="Database Management architecture schema diagram" class="bento-img">
@@ -308,15 +309,15 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- CTA Section (Apple Minimalism) -->
         <section id="contact" class="cta-section">
             <div class="container reveal">
-                <div class="cta-panel glass-card">
-                    <span class="cta-tag">Contact</span>
+                <div class="cta-panel">
+                    <span class="eyebrow">Collaboration</span>
                     <h2 class="cta-title">Interested?</h2>
-                    <p class="cta-subtitle">Just contact me.</p>
-                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNqKqtDDxSjVKsDWTTpDJXVdmKSvGWWcBkldwxxgFlbkzNQgPqWVmDPZdsrfZfcdRdfwzg" target="_blank" class="btn-contact-cta">
-                        Contact Me <i class="fa-solid fa-arrow-right"></i>
+                    <p class="cta-subtitle">Let's build something beautiful together.</p>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNqKqtDDxSjVKsDWTTpDJXVdmKSvGWWcBkldwxxgFlbkzNQgPqWVmDPZdsrfZfcdRdfwzg" target="_blank" class="apple-cta-button">
+                        Contact Me <i class="fa-solid fa-chevron-right icon-chevron"></i>
                     </a>
                 </div>
             </div>
@@ -328,7 +329,7 @@
         <div class="container footer-container">
             <div class="footer-left">
                 <a href="#home" class="footer-logo">Hafizh Andika Putera Al-Faris</a>
-                <p class="copyright">Copyright &copy; <span id="current-year">2026</span> Hafizh Andika Putera Al-Faris. All rights reserved.</p>
+                <p class="copyright">Copyright &copy; <span id="current-year">2026</span> Hafizh Andika. All rights reserved.</p>
             </div>
             
             <div class="footer-right">
