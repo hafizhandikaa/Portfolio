@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const trigger = document.getElementById('ai-process-trigger');
+  const trigger = document.getElementById('open-ai-modal-btn');
   const modal = document.getElementById('ai-process-modal');
   const closeBtn = document.querySelector('.modal-close-btn');
 
   if (trigger && modal && closeBtn) {
     // Open Modal
-    trigger.addEventListener('click', () => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
     });

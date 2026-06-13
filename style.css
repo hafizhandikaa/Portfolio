@@ -341,7 +341,50 @@ p, .b2 {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ai-credit-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: -0.2rem;
+  margin-bottom: 2.2rem;
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  color: #666;
+}
+
+.ai-note-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.ai-details-link {
+  color: #a78bfa;
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  transition: opacity var(--transition-speed-fast) ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.ai-details-link:hover {
+  opacity: 0.8;
+}
+
+.ai-details-link .arrow {
+  transition: transform var(--transition-speed-fast) ease;
+  font-family: var(--font-family);
+}
+
+.ai-details-link:hover .arrow {
+  transform: translateX(3px);
 }
 
 .hero-socials {
@@ -778,43 +821,7 @@ p, .b2 {
 /* ==========================================================================
    FLOATING AI PROCESS BUTTON & MODAL
    ========================================================================== */
-.floating-ai-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 90;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
-  border-radius: 50px;
-  background: rgba(18, 18, 18, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: var(--color-white-0);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  font-family: var(--font-family);
-  font-size: var(--font-size-b3);
-  font-weight: var(--font-weight-medium);
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform var(--transition-speed-fast) ease, background-color var(--transition-speed-fast) ease, box-shadow var(--transition-speed-fast) ease;
-}
 
-.floating-ai-btn i {
-  color: #a78bfa; /* Magical purple sparkle color */
-  font-size: 14px;
-}
-
-.floating-ai-btn:hover {
-  transform: translateY(-3px);
-  background: var(--color-black-400);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-.floating-ai-btn:active {
-  transform: translateY(-1px);
-}
 
 /* Modal Overlay */
 .modal-overlay {
