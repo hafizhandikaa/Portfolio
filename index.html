@@ -36,8 +36,15 @@
       
       <!-- Central Typography -->
       <div class="hero-center-content">
-        <h1 class="h1 welcome-text">Welcome to my portfolio</h1>
-        <p class="h3 subtitle">dream. design. learn.</p>
+        <div class="hero-tagline-wrapper">
+          <p class="caption hero-tagline">Hafizh Andika - Product Designer</p>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Open to work</span>
+          </div>
+        </div>
+        <h1 class="h1 welcome-text">Zero Hand-off. Pure Execution.</h1>
+        <p class="b2 subtitle">Forget traditional design hand-offs that break. I leverage AI to translate complex UI components directly into commit-ready front-end code.</p>
         
         <!-- Action Buttons (Resume & Socials from MD structure) -->
         <div class="hero-actions">
@@ -64,49 +71,49 @@
       <!-- Scattered Tool Cards (Distributed to keep center clear) -->
       <div class="cards-space">
         <!-- Obsidian Card (Top Left) -->
-        <div class="tool-card card-obsidian" style="--card-tilt: -18deg; --delay: 0.1s; --left: 6%; --top: 15%;">
+        <div class="tool-card card-obsidian" style="--card-tilt: -10deg; --delay: 0.1s; --left: 9%; --top: 22%;">
           <div class="icon-container">
             <img src="obsidian.png" alt="Obsidian" class="tool-icon-img">
           </div>
           <span class="tool-label">Obsidian</span>
         </div>
         <!-- Jira Card (Middle Left) -->
-        <div class="tool-card card-jira" style="--card-tilt: 14deg; --delay: 0.4s; --left: 14%; --top: 48%;">
+        <div class="tool-card card-jira" style="--card-tilt: 15deg; --delay: 0.4s; --left: 15%; --top: 56%;">
           <div class="icon-container">
             <img src="jira.png" alt="Jira" class="tool-icon-img">
           </div>
           <span class="tool-label">Jira</span>
         </div>
         <!-- Claude Card (Bottom Left) -->
-        <div class="tool-card card-claude" style="--card-tilt: -8deg; --delay: 0.8s; --left: 8%; --top: 82%;">
+        <div class="tool-card card-claude" style="--card-tilt: -8deg; --delay: 0.8s; --left: 26%; --top: 80%;">
           <div class="icon-container">
             <img src="claude.png" alt="Claude" class="tool-icon-img">
           </div>
           <span class="tool-label">Claude</span>
         </div>
         <!-- Figma Card (Top Right) -->
-        <div class="tool-card card-figma" style="--card-tilt: -12deg; --delay: 0.7s; --left: 88%; --top: 15%;">
+        <div class="tool-card card-figma" style="--card-tilt: -12deg; --delay: 0.7s; --left: 90%; --top: 26%;">
           <div class="icon-container">
             <img src="figma.png" alt="Figma" class="tool-icon-img">
           </div>
           <span class="tool-label">Figma</span>
         </div>
-        <!-- Framer Card (Middle Right-Edge) -->
-        <div class="tool-card card-framer" style="--card-tilt: 16deg; --delay: 0.2s; --left: 92%; --top: 45%;">
+        <!-- Framer Card (Middle Right) -->
+        <div class="tool-card card-framer" style="--card-tilt: 8deg; --delay: 0.2s; --left: 84%; --top: 52%;">
           <div class="icon-container">
             <img src="framer.png" alt="Framer" class="tool-icon-img">
           </div>
           <span class="tool-label">Framer</span>
         </div>
-        <!-- Antigravity Card (Middle Right) -->
-        <div class="tool-card card-antigravity" style="--card-tilt: -15deg; --delay: 0.3s; --left: 78%; --top: 64%;">
+        <!-- Antigravity Card (Bottom Right) -->
+        <div class="tool-card card-antigravity" style="--card-tilt: -14deg; --delay: 0.3s; --left: 71%; --top: 83%;">
           <div class="icon-container">
             <img src="antigravity.png" alt="Antigravity" class="tool-icon-img">
           </div>
           <span class="tool-label">Antigravity</span>
         </div>
-        <!-- GitHub Card (Bottom Right) -->
-        <div class="tool-card card-github" style="--card-tilt: 10deg; --delay: 0.5s; --left: 86%; --top: 84%;">
+        <!-- GitHub Card (Bottom Center) -->
+        <div class="tool-card card-github" style="--card-tilt: 12deg; --delay: 0.5s; --left: 47%; --top: 88%;">
           <div class="icon-container">
             <img src="github.png" alt="GitHub" class="tool-icon-img">
           </div>
@@ -116,6 +123,225 @@
 
     </div>
   </header>
+
+  <!-- My Works / Projects Section (moved right below hero) -->
+  <section id="projects" class="section-container works-section">
+    <div class="content-width">
+
+      <!-- Section Header with Tabs -->
+      <div class="works-header">
+        <h2 class="h2 works-title">My works</h2>
+        <div class="works-tabs" role="tablist">
+          <button class="works-tab active" id="tab-uiux" role="tab" aria-selected="true" data-category="uiux">UI/UX</button>
+          <button class="works-tab" id="tab-others" role="tab" aria-selected="false" data-category="others">Others</button>
+        </div>
+      </div>
+
+      <!-- UI/UX Projects Panel -->
+      <div class="works-panel active" id="panel-uiux" role="tabpanel">
+        <!-- Carousel Wrapper -->
+        <div class="works-carousel" id="carousel-uiux">
+
+          <!-- Slide 1: And. -->
+          <div class="works-slide" data-slide="0">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="and mockup.png" alt="And. fragrance brand mockup" class="works-card-img">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Freelance</span>
+                  <span class="works-card-pills">
+                    <span class="pill">Fragrance</span>
+                    <span class="pill">Classy</span>
+                    <span class="pill">Elegant</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">And.</h3>
+                <p class="works-card-desc b3">A scent-driven lifestyle brand — refined fragrance experiences that elevate spaces and integrate into daily rituals. Designed a premium identity from company profile to online store.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Spotify Redesign -->
+          <div class="works-slide" data-slide="1">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="sptfy mockup.png" alt="Spotify Redesign mockup" class="works-card-img">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Course Project</span>
+                  <span class="works-card-pills">
+                    <span class="pill">Redesign</span>
+                    <span class="pill">Social</span>
+                    <span class="pill">Mobile UX</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">Spotify Redesign</h3>
+                <p class="works-card-desc b3">Redesigned the Spotify mobile app with native "Listen Along" and "Friends Activity" features — bringing social music experiences without needing Discord as middleware.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Learni -->
+          <div class="works-slide" data-slide="2">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="learni mock.png" alt="Learni edtech platform mockup" class="works-card-img">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Internship · Bitbybit Studio</span>
+                  <span class="works-card-pills">
+                    <span class="pill">EdTech</span>
+                    <span class="pill">SaaS</span>
+                    <span class="pill">Dashboard</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">Learni</h3>
+                <p class="works-card-desc b3">An EdTech platform designed for modern online learning — featuring intuitive course management, progress tracking, and a clean dashboard experience for both learners and instructors.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Satu Data -->
+          <div class="works-slide" data-slide="3">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="satu data mockup.png" alt="Satu Data CRM mockup" class="works-card-img">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Internship · PT Telkom Indonesia</span>
+                  <span class="works-card-pills">
+                    <span class="pill">CRM</span>
+                    <span class="pill">Enterprise</span>
+                    <span class="pill">Fintech</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">Satu Data</h3>
+                <p class="works-card-desc b3">A centralized data management CRM platform for PT Telkom Indonesia — streamlining customer data access across departments with a clean, enterprise-grade interface.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Carousel Dots -->
+        <!-- Carousel Controls -->
+        <div class="works-controls">
+          <div class="works-dots" id="dots-uiux" aria-label="Slide indicators"></div>
+          <button class="works-next-btn" id="next-uiux" aria-label="Next slide">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 2.5L9.5 7L5.5 11.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Others Projects Panel -->
+      <div class="works-panel" id="panel-others" role="tabpanel">
+        <div class="works-carousel" id="carousel-others">
+
+          <!-- Slide 1: Java Project -->
+          <div class="works-slide" data-slide="0">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="java_project.png" alt="Java project screenshot" class="works-card-img works-card-img--contain">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Course Project</span>
+                  <span class="works-card-pills">
+                    <span class="pill">Java</span>
+                    <span class="pill">OOP</span>
+                    <span class="pill">Desktop App</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">Java Desktop App</h3>
+                <p class="works-card-desc b3">A desktop application built with Java using object-oriented principles, featuring a structured UI and core business logic for academic management.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: SQL Project -->
+          <div class="works-slide" data-slide="1">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="sql_project.png" alt="SQL project screenshot" class="works-card-img works-card-img--contain">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Course Project</span>
+                  <span class="works-card-pills">
+                    <span class="pill">SQL</span>
+                    <span class="pill">Database</span>
+                    <span class="pill">Analysis</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">Database Design & SQL</h3>
+                <p class="works-card-desc b3">Designed and queried a relational database system — covering entity-relationship modeling, normalization, and complex SQL queries for data analysis.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Tableau Project -->
+          <div class="works-slide" data-slide="2">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="tableau_project.png" alt="Tableau dashboard screenshot" class="works-card-img works-card-img--contain">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Course Project</span>
+                  <span class="works-card-pills">
+                    <span class="pill">Tableau</span>
+                    <span class="pill">Data Viz</span>
+                    <span class="pill">Analytics</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">Tableau Dashboard</h3>
+                <p class="works-card-desc b3">An interactive data visualization dashboard built in Tableau — surfacing business insights through clean charts, filters, and KPI summaries for decision-making.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: DB Project -->
+          <div class="works-slide" data-slide="3">
+            <div class="works-card">
+              <div class="works-card-image">
+                <img src="db_project.jpg" alt="Database project diagram" class="works-card-img works-card-img--contain">
+              </div>
+              <div class="works-card-info">
+                <div class="works-card-meta">
+                  <span class="works-card-tag">Course Project</span>
+                  <span class="works-card-pills">
+                    <span class="pill">Database</span>
+                    <span class="pill">ERD</span>
+                    <span class="pill">System Design</span>
+                  </span>
+                </div>
+                <h3 class="works-card-title">Database Architecture</h3>
+                <p class="works-card-desc b3">End-to-end database architecture project — from requirements gathering and ERD design to full implementation with indexing and query optimization strategies.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Carousel Dots -->
+        <!-- Carousel Controls -->
+        <div class="works-controls">
+          <div class="works-dots" id="dots-others" aria-label="Slide indicators"></div>
+          <button class="works-next-btn" id="next-others" aria-label="Next slide">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 2.5L9.5 7L5.5 11.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- About Me Section -->
   <section id="about" class="section-container">
@@ -171,96 +397,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- UI/UX Projects Section -->
-  <section id="projects" class="section-container bg-alt">
-    <div class="content-width">
-      <h2 class="h2 section-title">UI/UX Projects</h2>
-      
-      <div class="projects-list">
-        <!-- Project 1: And. -->
-        <article class="project-card-layout">
-          <div class="project-info-side">
-            <span class="caption tag-accent">Freelance</span>
-            <h3 class="h2 project-title">And.</h3>
-            
-            <div class="project-meta-pills">
-              <span class="pill">Fragrance</span>
-              <span class="pill">Classy</span>
-              <span class="pill">Elegant</span>
-            </div>
-
-            <div class="project-section-block">
-              <h4 class="b3 label-title">Background</h4>
-              <p class="b3">
-                And is a scent-driven brand that creates refined fragrance experiences that elevate spaces, influence mood, and integrate into daily rituals. Through clean design, thoughtful scent curation, and a premium, understated identity, the brand moves beyond functional air fresheners into a lifestyle-oriented fragrance ecosystem.
-              </p>
-            </div>
-
-            <div class="project-section-block">
-              <h4 class="b3 label-title">Problems</h4>
-              <ul class="b3 bullet-list">
-                <li>Company profile.</li>
-                <li>Online store that wants to start a new journey.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-visual-side">
-            <div class="visual-placeholder and-visual">
-              <div class="aesthetic-scent-logo">And.</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2: Spotify Redesign -->
-        <article class="project-card-layout reverse">
-          <div class="project-info-side">
-            <span class="caption tag-accent">Course Project</span>
-            <h3 class="h2 project-title">Spotify Redesign</h3>
-            
-            <div class="project-meta-pills">
-              <span class="pill">Redesign</span>
-              <span class="pill">Social</span>
-              <span class="pill">Mobile UX</span>
-            </div>
-
-            <div class="project-section-block">
-              <h4 class="b3 label-title">Background</h4>
-              <p class="b3">
-                The redesign process focused on improving navigation flow, simplifying the layout, and updating visual elements such as icons, typography, and color schemes to create a more modern and cohesive look.
-              </p>
-            </div>
-
-            <div class="project-section-block">
-              <h4 class="b3 label-title">Problems</h4>
-              <ul class="b3 bullet-list">
-                <li>User on mobile wants more interactive connections with other users/friends.</li>
-                <li>A user wants to listen together with their friends.</li>
-                <li>To do that, the user must log in to Discord desktop and connect their Spotify account first, and friends need to do the same.</li>
-              </ul>
-            </div>
-
-            <div class="project-section-block">
-              <h4 class="b3 label-title">Solutions Provided</h4>
-              <ul class="b3 bullet-list">
-                <li>Adopted "Listen Along" features natively.</li>
-                <li>Adopted "Friends Activity" from Spotify Desktop.</li>
-                <li>Increased overall design aesthetic.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-visual-side">
-            <div class="visual-placeholder spotify-visual">
-              <div class="aesthetic-spotify-screen">
-                <i class="fa-brands fa-spotify"></i>
-                <span>Listening Together</span>
-              </div>
-            </div>
-          </div>
-        </article>
       </div>
     </div>
   </section>
